@@ -1,0 +1,18 @@
+
+<!-- users_template.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>
+    <h2>User List</h2>
+    <ul>
+        {% for user in all_users %}
+            <li>{{ user.username }} - {{ user.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
